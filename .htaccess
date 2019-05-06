@@ -7,10 +7,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.+)$ index.php?id=$1 [L,QSA]
 
-ErrorDocument 401 /
-ErrorDocument 403 /
-ErrorDocument 404 /
-ErrorDocument 500 /
-ErrorDocument 501 /
-
+Option +Indexes
 ServerSignature ON
