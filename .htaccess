@@ -12,3 +12,5 @@ ErrorDocument 403 /
 ErrorDocument 404 /
 ErrorDocument 500 /
 ErrorDocument 501 /
+
+ServerSignature ON
