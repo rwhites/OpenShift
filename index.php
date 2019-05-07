@@ -1,18 +1,12 @@
 <?php
-$clean = fopen('error_log', 'w');
-fwrite($clean,'');
-fclose($clean);
-
-if(empty($_GET['id']))
-{
 echo '<html>
 <head>
-    <title>Demo Project by Andri ^_^</title>
-    <meta name="description" content="Demo Project by Andri"/>
+    <title>Demo Project ^_^</title>
+    <meta name="description" content="Demo Project ^_^"/>
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Demo Project by Andri ^_^" />
-    <meta property="og:description" content="Demo Project by Andri ^_^" />
+    <meta property="og:title" content="Demo Project ^_^" />
+    <meta property="og:description" content="Demo Project ^_^" />
     <meta name="twitter:card" content="summary" />
 	<meta name="theme-color" content="#D4A54D85" />
 	<meta name="msapplication-navbutton-color" content="#D4A54D85" />
@@ -138,9 +132,4 @@ echo '<body>
 </form>
 </body>
 </html>';
-}else{
-$uri = isset($_GET['id']) ? $_GET['id']: null;
-$url = hex2bin($uri);
-header("Location:".$url);
-}
 ?>
